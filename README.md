@@ -1,2 +1,3 @@
-# ECOR-1041---Introduction-to-Programming
-First-Year Software Engineering programming labs
+# About Me
+
+Contains all my work done throughout ECOR 1041 during my First Year Software Engineering program
