@@ -1,0 +1,126 @@
+﻿ECOR 1041 Lab 2 Solution Template 
+
+Author and Student Number: Arun Karki 101219923
+
+This file is to be used in conjunction with the detailed lab description for Lab 2.
+Use this file to enter your answers to the series of exercises you will complete.
+
+=========================================================================================
+
+Exploring Variables
+
+The exercises must be done in Python Tutor (pythontutor.com).
+Python Tutor is a great tool for VISUALIZING the execution of code and to understand
+the use of memory by a computer program.  Use the default SETTINGS:
+  - Hide Exited Frames
+  - Inline Primitives and try to nest objects
+  - Draw Pointers as Arrows
+
+Note: Python Tutor is a tool for LEARNING.  Wing 101 is a tool for writing real programs.
+They are both great, but have different purposes and strengths.
+
+============
+
+Exercise 1:  To convert a temperature measured on the Celsius scale to the 
+equivalent Fahrenheit temperature, we multiply the Celsius temperature by 9/5, then add 32. 
+For example, 20.0 degrees Celsius is equivalent to 68.0 degrees Fahrenheit.
+
+In Python Tutor's editor window:
+1. Type one assignment statement that creates a new variable named degrees_c and binds it to 20.0. 
+2. Type one assignment statement that converts the temperature bound to degrees_c to the 
+equivalent temperature in degrees Fahrenheit. This temperature should be bound to a 
+new variable named degrees_f.
+
+Click the Visualize Execution button. Execute the code, one statement at a time. 
+Observe the memory diagram as the code is executed, step-by-step. Verify that your code
+produces a result of 68.0 degrees Farenheit.
+
+When does variable degrees_c appear in the diagram?  
+
+Answer: It is the first diagram to appear. The variable is defined and its value is binded to 20.0
+
+What is the name of the frame containing degrees_c?  
+
+Answer: The name of the frame is "degrees_c"
+
+When does variable degrees_f appear in the diagram?
+
+Answer: It is the last diagram to appear and its value is 68.0
+===========
+
+Exercise 2: In some countries, a vehicle's fuel efficiency is measured in miles per gallon. 
+In other countries, the efficiency is measured in litres per 100 km. 
+For example, 32 miles per Imperial gallon is equivalent to approximately 8.83 litres per 100 km.
+
+You're going to write Python statements that convert miles per gallon to litres per 100 km. 
+One Imperial gallon is equal to approximately 4.54609 litres. 
+One mile is equal to approximately 1.60934 km. 
+
+In Python Tutor's editor window:
+1. Type one assignment statement that creates a new variable named mpg and 
+binds it to the value 32 (which represents 32 miles per gallon).
+2. Type two assignment statements that create new constants named LITRES_PER_GALLON and 
+KMS_PER_MILE and binds them to the values 4.54609 and 1.60934, respectively. 
+(Note that the names of constant values in Python are, by convention, written in uppercase.)
+3. Type one assignment statement that converts the mileage bound to mpg to the equivalent fuel 
+consumption, measured in litres per 100 km. This value should be bound to a variable named 
+fuel_consumption.
+
+Click the Visualize Execution button. Execute the code, one statement at a time. 
+Observe the memory diagram as the code is executed, step-by-step. Verify that your code
+produces a result of 8.83 litres per 100 km.
+
+When do the variables appear in the diagram?
+
+Answer: The variables are first to appear and their values are declared along with them.
+
+What are the types and values of the objects?
+
+Answer: mpg is an integer type with a value of 32. LITRES_PER_GALLON, KMS_PER_MILE, fuel_consumption are float types and they values are
+4.5461, 1.6093, 8.8276, correspondingly.
+===========
+
+Exercise 3: Consider these assignment statements:
+a = 8			# 1
+b = 2			# 2
+c = a * b		# 3
+d = b			# 4
+a = 2			# 5
+b = 3			# 6
+
+First, test your visualization skills by executing the given statements in your head,
+without using the Python shell or PyTutor to assist you.
+
+- Predict the value that will be bound to c AFTER Line 4 is executed: 
+
+Answer: Value is 16.
+
+- Predict the value that will be bound to d AFTER Line 6 is executed: 
+
+Answer: Value is 2.
+
+Confirm your answers by entering these statements in Python tutor and executing
+the code one statement at a time.
+
+Concluding Question: This set of statements is an experiment. What question is the
+experiment trying to answer? (i.e. What is proven by this exercise?)
+
+Answer: It is trying to show that values of a variable will remain the same unless the variable itself is changed.
+If a is 2 and b is 3 and we assume that c is a*b then even if a is changed after c is executed, it will not
+affect the value of c.
+
+===========
+Exercise 4: Explore augmented operators. 
+
+In Python Tutor's editor window, enter the following and execute one statement at a time.
+
+x = 3
+x *= x - x
+
+Concluding Question: Write a short step-by-step explanation of how Python evaluates the
+second statment. 
+
+Answer: Python takes the original value of 3 and multiplies it with x-x which is 3-3 which is 0. 
+This statement could also be written as x = (x-x) * x which is x = 0 * x that yields 0.
+
+Last edited: August 10, 2021

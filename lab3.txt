@@ -1,0 +1,152 @@
+ECOR 1041 Lab 3 Solution Template
+
+Author and Student Number: Arun Karki 101219923
+
+This file is to be used in conjunction with the detailed lab description for Lab 3.
+Use this file to enter your answers to the series of exercises you will complete.
+
+==========
+Exercise 1  (.../25)
+
+What is the name of the frame containing variable "area_of_disk"?
+
+Answer: Global frame
+
+What does variable "area_of_disk" refer to?
+
+Answer: It isn't a variable, rather a function that inputs radius and outputs the area.
+
+What is the name of the frame containing parameter "radius"?
+
+Answer: Global frame
+
+When does the frame containing parameter radius appear in the memory diagram?
+
+Answer: It appears in the 4th step when the variable "area" is declared
+
+What is the type and value of the variable "radius"?
+Where did that value come from?
+
+Answer: It is a float value and it was the input given area_of_disk was called to declare the variable "area"
+
+How does PyTutor depict the value the function will return?
+
+Answer: A red text that says "Return value"
+
+When does the frame containing "radius" disappear?
+
+Answer: On the last step once the value for area is returned from the function and stored in the variable "area"
+
+What is the name of the frame containing the variable "area"? 
+
+Answer: Global frame
+
+When does "area" appear in the frame?
+
+Answer: It appears on the last step when "radius" disappears
+
+What is the type and value of "area"?
+Where did that value come from?
+
+Answer: "area" is a float type and its value is 153.938. The value returned from the "area_of_disk" function which was given 7.0 as the input.
+==========
+Exercise 2 (.../10) 
+
+What value does "area_of_disk" return each time it is called?
+
+Answer: It takes the radius and squares it then multiplies the value with pi and returns the area of any circle.
+for our purposes, since the radius was always 7, the output was always 153.938
+
+==========
+Exercise 3 (.../25)
+
+What is the name of the frame containing parameters "inner" and "outer"?
+
+Answer: area_of_ring
+
+When does the frame appear in the memory diagram?
+
+Answer: It appears on the 5th step when the variable "area" is declared.
+
+What are the types and values of the objects bounded "inner" and "outer"? 
+
+Answer: "inner" has a value of 7.0 and "outer" has a value of 14.0, they are both float types.
+
+What caused those values to be bound to "inner" and "outer"?
+
+Answer: They were passed as arguments when the variable "area" was delcared and called on "area_of_ring" function.
+
+What is the name of the frame containing parameter "radius"? 
+
+Answer: area_of_disk
+
+When does that frame appear in the memory diagram?
+How many times does it appear?
+
+Answer: It appears on the 7th step and it appears 6 times.
+
+Each time the frame containing "radius" appears, what is the type and value of
+the object bound to "radius"? 
+
+Answer: The values are 14.0 and 7.0 and they are both float types.
+
+What caused that object to be bound to "radius"?
+
+Answer: They were passed as arguments when area_of_disk function is invoked
+
+When does the frame containing "radius" disappear?
+
+Answer: It disappears on the final step
+
+When does the frame containing "inner" and "outer" disappear?
+
+Answer: They both disappear on the final step
+
+What is the name of the frame containing the variable "area"? 
+
+Answer: Global frame
+
+When does "area" appear in the frame?
+
+Answer: It appears on the final step
+
+What is the type and value of the object bound to "area"? 
+
+Answer: The value is 461.8141 and it is a float type
+
+What caused that object to be bound to "area"?
+
+Answer: A function was invoked and arguments were given to declare "area", the value was returned from the calculations done in the function
+==========
+Exercise 4 (.../20)
+
+What is the type of the object returned by the function when there is
+no return statement?
+
+Answer: A NoneType is returned.
+
+What is the value of the object returned by the function when there is
+no return statement?
+
+Answer: The value is None
+==========
+Exercise 5 (.../20)
+
+When "square" is called, but before Python executes x = x ** 2, what value is
+bound to parameter "x"? 
+What value is bound to variable "a"?
+
+Answer: An integer type with value of 4 is bound to parameter x. Variable "a" is bound to 4 as well.
+
+After Python executes x = x ** 2, but before the function returns, what value
+is bound to parameter "x"? 
+What value is bound to variable "a"?
+
+Answer: An integer type with a value of 16 is bound to parameter x. Variable "a" is bound to 4.
+
+In Python code, does assigning a value to a function's parameter change the 
+corresponding function argument?
+
+Answer: No, if "a" is passed on as a parameter, and "x" is the argument, they will represent the same value.
+==========
+Last edited: Dec 23, 2021
